@@ -10,16 +10,6 @@ import NavBar from "@/components/ui/NavBar";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef } from "react";
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-// import NavBar from "./components/ui/NavBar";
-// import Hero from "./components/homepage/Hero";
-// import Role from "./components/homepage/Role";
-// import About from "./components/homepage/About";
-// import Services from "./components/homepage/Services";
-// import Works from "./components/homepage/Works";
-// import Contact from "./components/homepage/Contact";
-// import Footer from "./components/ui/Footer";
 
 const App = () => {
  

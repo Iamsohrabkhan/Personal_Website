@@ -180,7 +180,7 @@ export default function ContactUi() {
             </h4>
             <div className="space-y-3 text-body-2 2xl:text-3xl">
               <a
-                href="https://bento.me/huyng"
+                href="https:instagram.com/iamsohrabkhan"
                 className="group flex items-center space-x-2"
                 target="_blank"
                 rel="noreferrer"
