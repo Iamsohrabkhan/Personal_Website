@@ -1,12 +1,15 @@
 import './globals.css'
+
 export const metadata = {
-  title: 'Sohrab Khan',
-  description: 'I am website developer, I create website with reactJs, nextjs and Framer moiton.',
-  keywords: ["personal website", "reactJS", "nextJS", "framer moiton","portfolio"],
-  twitter:{
-    card: "summary_large_image"
-  }
-}
+  title: {
+    default: "Sohrab Khan",
+    template: "%s - Sohrab Khan",
+  },
+  description: "I am website developer, I create website with reactJs, nextjs and Framer moiton with degree in Physics.",
+  twitter: {
+    card: "summary_large_image",
+  },
+};
 
 export default function RootLayout({ children }) {
   return (
