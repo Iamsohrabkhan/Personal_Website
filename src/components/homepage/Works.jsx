@@ -1,8 +1,3 @@
-
-import memento from "/src/assets/images/memento-desktop.webp";
-import acc from "/src/assets/images/acc-square.webp";
-import daddy from "/src/assets/images/godaddy-desktop.webp";
-import sunnyside from "/src/assets/images/sunnyside-desktop.webp";
 import Projects from "../ui/Projects";
 import Heading from "../ui/Heading";
 
@@ -25,6 +20,19 @@ export default function Works({ forwardedRef }) {
             type="Web Design • Frontend Development"
             year="2023"
             tools="HTML • TailwindCSS • JavaScript • Figma"
+
+          />
+        </div>
+        
+        <div className=" col-span-1 md:col-span-12">
+          <Projects
+            link="https://natalie-rae-creative.vercel.app/"
+            img={"/assets/images/natalie.png"}
+            alt="natlie rae creative"
+            name="natlieraecreative"
+            type="Web Design • Frontend Development"
+            year="2023"
+            tools="NextJS • TailwindCSS • Framer Motion"
 
           />
         </div>

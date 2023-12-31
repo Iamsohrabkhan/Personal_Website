@@ -5,7 +5,6 @@ export default function Services() {
   const expertiseItems = [
     "Web Development",
     "Web Design",
-    "Wireframing",
     "UI/UX Design",
     "Branding",
   ];
@@ -14,11 +13,11 @@ export default function Services() {
     "JavaScript",
     "HTML",
     "CSS",
-    "Webflow",
     "Framer Motion",
     "TailwindCSS",
     "ReactJS",
     "NextJS",
+    "Sanity.io"
   ];
 
   return (
