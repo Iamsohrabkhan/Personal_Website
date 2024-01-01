@@ -44,14 +44,14 @@ export default function Hero() {
       <div className="z-10 flex flex-col  w-full items-center text-title 2xl:text-[10vw] 2xl:space-y-16 font-bold  uppercase text-accent-300">
         <div className="title 2xl:py-16">
           {/* Learn more about useRef */}
-          <h1 ref={(el) => (titles.current[0] = el)} className="translate-y-96 overflow-visible text-4xl md:text-4xl lg:text-7xl ">
+          <h1 ref={(el) => (titles.current[0] = el)} className="translate-y-96 overflow-visible text-3xl md:text-4xl lg:text-7xl ">
             Hey, I&apos;m Sohrab Khan
           </h1>
         </div>
         <div className=" title 2xl:py-16">
           <h1
             ref={(el) => (titles.current[1] = el)}
-            className="translate-y-96 font-outline-3 md:font-outline-4 text-transparent  overflow-visible text-3xl md:text-4xl lg:text-7xl "
+            className="translate-y-96 font-outline-3 md:font-outline-4 text-transparent  overflow-visible text-2xl md:text-4xl lg:text-7xl "
           >
             Building websites with
           </h1>
