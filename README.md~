@@ -1,1 +1,46 @@
-# Huy-clone-website
+# Portfolio
+
+This is my portfolio website created with Next.js and GSAP.
+
+## Description
+
+This portfolio showcases my projects and skills. It is built using Next.js, a React framework, and GSAP for animations.
+
+## Features
+
+- Responsive design
+- Smooth animations using GSAP
+- Project showcase with images and descriptions
+- Links to live projects and GitHub repositories
+
+## Technologies Used
+
+- Next.js
+- GSAP
+- HTML
+- CSS
+
+## Installation
+
+1. Clone the repository: `https://github.com/Iamsohrabkhan/Huy-clone-website.git`
+2. Install dependencies: `npm install`
+
+## Usage
+
+1. Run the development server: `npm run dev`
+2. Open your browser and visit `http://localhost:3000`
+
+## Screenshots
+src/app/opengraph-image.png
+
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+
+- Email: 7ohrabkhan@gmail.com
+- LinkedIn: https://www.linkedin.com/in/iamsohrabkhan/
+- Portfolio: https://sohrabkhan.vercel.app/
+

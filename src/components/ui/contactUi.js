@@ -4,14 +4,67 @@ import { useEffect, useState, useRef } from "react";
 import { ScrollTrigger } from "gsap/all";
 import { gsap } from "gsap";
 import Heading from "./Heading";
-import { useForm, ValidationError } from "@formspree/react";
-
+import * as Yup from "yup";
+import { useFormik } from "formik";
 export default function ContactUi() {
-  const [state, handleSubmit] = useForm("meqbpbgz");
   const [time, setTime] = useState("");
   const heading = useRef(null);
   const body = useRef(null);
   const contactSection = useRef(null);
+
+  // const {toast}=useToast()
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      email: "",
+      message: "",
+    },
+
+    validationSchema: Yup.object({
+      name: Yup.string()
+        .max(20, "Name must be 20 characters or less.")
+        .min(3, "Name must be more 3 characters")
+        .required("Name is required"),
+      email: Yup.string()
+        .email("Invalid email address")
+        .required("Email is required"),
+      message: Yup.string().required("Message is required"),
+    }),
+
+    onSubmit: async (values) => {
+      try {
+        // Replace 'your-formspree-endpoint' with your actual Formspree endpoint
+        const response = await fetch("https://formspree.io/f/meqbpbgz", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(values),
+        });
+
+        if (response.ok) {
+          // You can handle the success response here if needed
+          // toast({
+          //   title: "SUCCESS!",
+          //   description: "Message had successfuly send!"
+          // })
+         
+         
+          
+        } else {
+          // Handle any errors that occur during form submission
+          console.error(
+            "Form submission failed",
+            response.status,
+            response.statusText
+          );
+        }
+      } catch (error) {
+        // Handle any other errors that may occur
+        console.error("Form submission error", error);
+      }
+    },
+  });
 
   useEffect(() => {
     ScrollTrigger.create({
@@ -42,9 +95,6 @@ export default function ContactUi() {
       setTime(new Date().toLocaleTimeString());
     }, 1000);
   });
-  if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
-  }
 
   return (
     <main
@@ -68,83 +118,100 @@ export default function ContactUi() {
             ref={body}
             className="mt-4 max-w-md 2xl:max-w-2xl text-body-2 2xl:text-4xl text-accent-100 translate-y-10 opacity-0"
           >
-            I am currently available for freelance work. Feel free to share your projects.
+            I am currently available for freelance work. Feel free to share your
+            projects.
           </p>
           <form
             autoComplete="off"
             // eslint-disable-next-line react/no-unknown-property
             className="mt-10 font-grotesk"
-            onSubmit={handleSubmit}
+            onSubmit={formik.handleSubmit}
           >
-            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden"  
+            
+                  id="name"
+                  name="name"  onChange={formik.handleChange}
+                  value={formik.values.name}
+                  onBlur={formik.handleBlur}/>
             <div className="grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2">
               <div className="relative z-0">
                 <input
-                  required
                   type="text"
                   id="name"
                   name="name"
                   className="peer block w-full appearance-none border-0 border-b border-accent-100 bg-transparent px-0 py-2.5 focus:outline-none focus:ring-0"
                   placeholder=""
+                  onChange={formik.handleChange}
+                  value={formik.values.name}
+                  onBlur={formik.handleBlur}
                 />
 
                 <label
                   htmlFor="name"
-                  className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-body-3 2xl:text-body-2 text-secondary-600 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75"
+                  className={`absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-body-3 2xl:text-body-2  duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75  ${
+                    formik.touched.name && formik.errors.name
+                      ? "text-red-500"
+                      : "text-secondary-600"
+                  } `}
                 >
-                  Your name
+                  {formik.touched.name && formik.errors.name
+                    ? formik.errors.name
+                    : "Your name"}
                 </label>
-                <ValidationError
-                  prefix="name"
-                  field="name"
-                  errors={state.errors}
-                />
               </div>
               <div className="relative z-0">
                 <input
-                  required
-                  type="text"
+                  type="email"
                   name="email"
                   id="email"
                   className="peer block w-full appearance-none border-0 border-b border-accent-100 bg-transparent px-0 py-2.5 focus:outline-none focus:ring-0"
                   placeholder=" "
+                  onChange={formik.handleChange}
+                  value={formik.values.email}
+                  onBlur={formik.handleBlur}
                 />
                 <label
                   htmlFor="email"
-                  className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-body-3 2xl:text-body-2 text-secondary-600 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75"
+                  className={`absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-body-3 2xl:text-body-2  duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75  ${
+                    formik.touched.email && formik.errors.email
+                      ? "text-red-500"
+                      : "text-secondary-600"
+                  }`}
                 >
-                  Your email
+                  {formik.touched.email && formik.errors.email
+                    ? formik.errors.email
+                    : "Your email"}
                 </label>
-                <ValidationError
-                  prefix="Email"
-                  field="email"
-                  errors={state.errors}
-                />
               </div>
               <div className="relative z-0 sm:col-span-2">
                 <textarea
-                  required
                   id="message"
                   name="message"
                   rows="5"
                   className="peer block w-full appearance-none border-0 border-b border-accent-100 bg-transparent px-0 py-2.5 focus:outline-none focus:ring-0"
                   placeholder=" "
+                  onChange={formik.handleChange}
+                  value={formik.values.message}
+                  onBlur={formik.handleBlur}
                 ></textarea>
                 <label
                   htmlFor="message"
-                  className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-body-3 2xl:text-body-2 text-secondary-600 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75"
+                  
+                  className={`absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-body-3 2xl:text-body-2  duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 ${
+                    formik.touched.message && formik.errors.message
+                      ? "text-red-500"
+                      : "text-secondary-600"
+                  } `}
+                  onChange={formik.handleChange}
+                  value={formik.values.message}
+                  onBlur={formik.handleBlur}
                 >
                   Your message
                 </label>
-                <ValidationError
-                  prefix="Message"
-                  field="message"
-                  errors={state.errors}
-                />
               </div>
             </div>
             <button
-              type="submit" disabled={state.submitting}
+              type="submit"
               className="button group mt-10 border duration-200 hover:border-accent-400 hover:bg-transparent"
             >
               <span className="relative">
