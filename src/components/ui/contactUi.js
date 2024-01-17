@@ -31,10 +31,11 @@ export default function ContactUi() {
       message: Yup.string().required("Message is required"),
     }),
 
-    onSubmit: async (values) => {
+    onSubmit: async (values, { resetForm }) => {
+      console.log("cliked on button");
       try {
         // Replace 'your-formspree-endpoint' with your actual Formspree endpoint
-        const response = await fetch("https://formspree.io/f/meqbpbgz", {
+        const response = await fetch(process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -48,7 +49,7 @@ export default function ContactUi() {
           //   title: "SUCCESS!",
           //   description: "Message had successfuly send!"
           // })
-         
+          resetForm();
          
           
         } else {
