@@ -35,7 +35,7 @@ export default function ContactUi() {
       console.log("cliked on button");
       try {
         // Replace 'your-formspree-endpoint' with your actual Formspree endpoint
-        const response = await fetch(process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT, {
+        const response = await fetch("https://formspree.io/f/meqbpbgz", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
