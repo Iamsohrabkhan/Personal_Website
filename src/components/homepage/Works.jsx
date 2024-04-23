@@ -8,9 +8,20 @@ export default function Works({ forwardedRef }) {
       id="works"
       className="nav-change overflow-hidden my-[10%]"
     >
-     <Heading title="Projects" />
+      <Heading title="Projects" />
       <div className="mt-10 grid grid-cols-1 gap-16 gap-y-10 md:grid-cols-12">
         {/* Project #1 */}
+        <div className=" col-span-1 md:col-span-12">
+          <Projects
+            link="https://wedding-tempalate-mu.vercel.app/"
+            img="/assets/images/wedding.png"
+            alt="Wedding website mockup"
+            name="Wedding Website"
+            type="Web Design • Frontend Development"
+            year="2024"
+            tools="React • TailwindCSS • Framer Motion"
+          />
+        </div>
         <div className=" col-span-1 md:col-span-12">
           <Projects
             link="https://musical-stroopwafel-1c2327.netlify.app/landing.html"
@@ -20,10 +31,9 @@ export default function Works({ forwardedRef }) {
             type="Web Design • Frontend Development"
             year="2023"
             tools="HTML • TailwindCSS • JavaScript • Figma"
-
           />
         </div>
-        
+
         <div className=" col-span-1 md:col-span-12">
           <Projects
             link="https://natalie-rae-creative.vercel.app/"
@@ -33,7 +43,6 @@ export default function Works({ forwardedRef }) {
             type="Web Design • Frontend Development"
             year="2023"
             tools="NextJS • TailwindCSS • Framer Motion"
-
           />
         </div>
         {/* Project #2 */}
@@ -71,7 +80,7 @@ export default function Works({ forwardedRef }) {
           />
         </div>
         <div className="col-span-1 h-fit md:col-span-4">
-        <Projects
+          <Projects
             link="https://sunnysidechallenge.netlify.app"
             img={"/assets/images/sunnyside-desktop.webp"}
             alt="sunnyside project mockup"
@@ -80,7 +89,6 @@ export default function Works({ forwardedRef }) {
             year="2022"
             tools="HTML • TailwindCSS • JavaScript"
           />
-         
         </div>
       </div>
     </section>
