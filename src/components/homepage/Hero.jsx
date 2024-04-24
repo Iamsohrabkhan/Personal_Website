@@ -51,7 +51,7 @@ export default function Hero() {
         <div className=" title 2xl:py-16">
           <h1
             ref={(el) => (titles.current[1] = el)}
-            className="translate-y-96 font-outline-3 md:font-outline-4 text-transparent  overflow-visible text-2xl md:text-4xl lg:text-7xl "
+            className="translate-y-96 md:font-outline-4 md:text-transparent  overflow-visible text-2xl md:text-4xl lg:text-7xl "
           >
             Building websites with
           </h1>
