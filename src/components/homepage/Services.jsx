@@ -13,11 +13,11 @@ export default function Services() {
     "JavaScript",
     "HTML",
     "CSS",
-    "Framer Motion",
     "TailwindCSS",
+    "Framer Motion",
+    "GSAP",
     "ReactJS",
     "NextJS",
-    "Sanity.io"
   ];
 
   return (

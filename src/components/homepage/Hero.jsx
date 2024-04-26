@@ -44,7 +44,10 @@ export default function Hero() {
       <div className="z-10 flex flex-col  w-full items-center text-title 2xl:text-[10vw] 2xl:space-y-16 font-bold  uppercase text-accent-300">
         <div className="title 2xl:py-16">
           {/* Learn more about useRef */}
-          <h1 ref={(el) => (titles.current[0] = el)} className="translate-y-96 overflow-visible text-3xl md:text-4xl lg:text-7xl ">
+          <h1
+            ref={(el) => (titles.current[0] = el)}
+            className="translate-y-96 overflow-visible text-3xl md:text-4xl lg:text-7xl "
+          >
             Hey, I&apos;m Sohrab Khan
           </h1>
         </div>
@@ -53,12 +56,15 @@ export default function Hero() {
             ref={(el) => (titles.current[1] = el)}
             className="translate-y-96 md:font-outline-4 md:text-transparent  overflow-visible text-2xl md:text-4xl lg:text-7xl "
           >
-            Building websites with
+            I build cool websites
           </h1>
         </div>
         <div className=" title 2xl:py-16">
-          <h1 ref={(el) => (titles.current[2] = el)} className="translate-y-96 text-xl md:text-4xl lg:text-7xl ">
-            flair, innovative & creativity 
+          <h1
+            ref={(el) => (titles.current[2] = el)}
+            className="translate-y-96 text-xl md:text-4xl lg:text-7xl "
+          >
+            Like this one.
           </h1>
         </div>
       </div>
@@ -70,7 +76,7 @@ export default function Hero() {
           ref={img}
           className=" scale-110 aspect-[11/16] sm:aspect-[5/6] md:aspect-[7/7] rounded-md opacity-50 lg:aspect-[11/9] w-full h-auto"
           src={"/assets/images/heroimg.webp"}
-          alt="Sohrab Khan"         
+          alt="Sohrab Khan"
           width={1920}
           height={1080}
         />

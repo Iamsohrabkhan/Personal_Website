@@ -43,7 +43,7 @@ export default function About() {
             src="/assets/images/profile.png"
             width={600}
             height={800}
-            alt="portrait image of Huy standing in front of a tree and foliage"
+            alt="image of Sohrab Khan"
           />
         </div>
         <div className="top-20 sm:sticky md:top-28 lg:top-32 md:w-1/2">
