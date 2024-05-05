@@ -32,7 +32,6 @@ export default function ContactUi() {
     }),
 
     onSubmit: async (values, { resetForm }) => {
-      console.log("cliked on button");
       try {
         // Replace 'your-formspree-endpoint' with your actual Formspree endpoint
         const response = await fetch("https://formspree.io/f/meqbpbgz", {

@@ -39,8 +39,8 @@ export default function About() {
         <div className="top-28 overflow-hidden rounded-md md:sticky md:w-1/2">
           <Image
             ref={profile}
-            className="aspect-square h-auto w-full rounded-md object-contain object-center md:aspect-auto"
-            src="/assets/images/profile.png"
+            className="aspect-square h-auto w-full rounded-md object-cove object-scale-down md:aspect-auto"
+            src="/assets/images/profile.jpg"
             width={600}
             height={800}
             alt="image of Sohrab Khan"
