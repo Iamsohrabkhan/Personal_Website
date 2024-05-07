@@ -259,7 +259,7 @@ export default function ContactUi() {
                 </div>
               </a>
               <a
-                href="https://github.com/Iamsohrabkhan/"
+                href="https://www.instagram.com/imsohrabkhan_/"
                 className="group flex items-center space-x-2"
                 target="_blank"
                 rel="noreferrer"

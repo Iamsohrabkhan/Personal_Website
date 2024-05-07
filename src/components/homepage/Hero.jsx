@@ -1,5 +1,5 @@
 import { gsap } from "gsap";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useLayoutEffect } from "react";
 import Image from "next/image";
 
 export default function Hero() {
@@ -18,7 +18,7 @@ export default function Hero() {
     });
   }, []);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const tl = gsap.timeline();
 
     tl.from(imgContainer.current, {
@@ -26,9 +26,10 @@ export default function Hero() {
       duration: 3.25,
       ease: "power3.inOut",
     })
-      .from(
+      .fromTo(
         img.current,
         { scale: 2, duration: 3.2, ease: "power4.inOut" },
+        { scale: 1.1, duration: 3.2, ease: "power4.inOut" },
         "-=3.1"
       )
       .to(titles.current, { y: 0, duration: 2, ease: "power4.inOut" }, "-=2.5")
@@ -38,11 +39,11 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="hero relative flex w-full h-screen select-none items-center justify-center"
+      className="hero relative flex w-full h-svh select-none items-center justify-center  py-4"
       aria-label="hero"
     >
-      <div className="z-10 flex flex-col  w-full items-center text-title 2xl:text-[10vw] 2xl:space-y-16 font-bold  uppercase text-accent-300">
-        <div className="title 2xl:py-16">
+      <div className="z-10 flex flex-col   w-full items-center text-title 2xl:text-[10vw] 2xl:space-y-16 font-bold  uppercase text-accent-300">
+        <div className="title  2xl:py-16">
           {/* Learn more about useRef */}
           <h1
             ref={(el) => (titles.current[0] = el)}
@@ -70,15 +71,16 @@ export default function Hero() {
       </div>
       <div
         ref={imgContainer}
-        className="absolute mx-auto  w-[55%] overflow-hidden rounded-md"
+        className="absolute mx-auto  w-[40%] overflow-hidden rounded-md"
       >
         <Image
           ref={img}
-          className=" scale-110 aspect-[11/16] sm:aspect-[5/6] md:aspect-[7/7] rounded-md opacity-50 lg:aspect-[11/9] w-full h-auto"
+          className="rounded-md opacity-50"
+          // className=" scale-110 aspect-[11/16] sm:aspect-[5/6] md:aspect-[7/7] rounded-md opacity-50 lg:aspect-[11/9] w-full h-auto"
           src={"/assets/images/heroimg.webp"}
           alt="Sohrab Khan"
-          width={1920}
-          height={1080}
+          width={1200}
+          height={1400}
         />
       </div>
       <div

@@ -13,13 +13,24 @@ export default function Works({ forwardedRef }) {
         {/* Project #1 */}
         <div className=" col-span-1 md:col-span-12">
           <Projects
+            link="https://main--appletvplusclone.netlify.app/"
+            img="/assets/images/apple.png"
+            alt="Wedding website mockup"
+            name="Wedding Website"
+            type="Web Design • Frontend Development"
+            year="2024"
+            tools="React • SCSS • GSAP"
+          />
+        </div>
+        <div className=" col-span-1 md:col-span-12">
+          <Projects
             link="https://wedding-tempalate-mu.vercel.app/"
             img="/assets/images/wedding.png"
             alt="Wedding website mockup"
             name="Wedding Website"
             type="Web Design • Frontend Development"
             year="2024"
-            tools="React • TailwindCSS • Framer Motion"
+            tools="NextJS • TailwindCSS • Framer Motion"
           />
         </div>
         <div className=" col-span-1 md:col-span-12">
