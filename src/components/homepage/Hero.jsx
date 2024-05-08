@@ -71,17 +71,18 @@ export default function Hero() {
       </div>
       <div
         ref={imgContainer}
-        className="absolute mx-auto  w-[40%] overflow-hidden rounded-md"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mx-auto overflow-hidden rounded-md"
       >
-        <Image
-          ref={img}
-          className="rounded-md opacity-50"
-          // className=" scale-110 aspect-[11/16] sm:aspect-[5/6] md:aspect-[7/7] rounded-md opacity-50 lg:aspect-[11/9] w-full h-auto"
-          src={"/assets/images/heroimg.webp"}
-          alt="Sohrab Khan"
-          width={1200}
-          height={1400}
-        />
+        <div className="relative w-56 h-52 md:w-64 md:h-56 lg:w-[34rem] lg:h-[28rem] overflow-clip">
+          <Image
+            ref={img}
+            className=" rounded-md opacity-50 scale-[2]"
+            // className=" scale-110 aspect-[11/16] sm:aspect-[5/6] md:aspect-[7/7] rounded-md opacity-50 lg:aspect-[11/9] w-full h-auto"
+            src={"/assets/images/heroimg.webp"}
+            alt="Sohrab Khan"
+            fill
+          />
+        </div>
       </div>
       <div
         ref={scroll}
