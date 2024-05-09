@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![alt text](src/app/opengraph-image.png)
+# Portfolio
 
-## Getting Started
+This is my portfolio website created with Next.js and GSAP.
 
-First, run the development server:
+## Description
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This portfolio showcases my projects and skills. It is built using Next.js, a React framework, and GSAP for animations.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Responsive design
+- Smooth animations using GSAP
+- Project showcase with images and descriptions
+- Links to live projects and GitHub repositories
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Technologies Used
 
-## Learn More
+- Next.js
+- GSAP
+- HTML
+- Tailwind CSS
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone the repository: `https://github.com/Iamsohrabkhan/Personal_Website.git`
+2. Install dependencies: `pnpm install`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Usage
 
-## Deploy on Vercel
+1. Run the development server: `pnpm run dev`
+2. Open your browser and visit `http://localhost:3000`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Screenshots
+src/app/opengraph-image.png
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+
+- Portfolio: https://sohrabkhan.vercel.app/
+- LinkedIn: https://www.linkedin.com/in/iamsohrabkhan/
+- Email: 7ohrabkhan@gmail.com
+
