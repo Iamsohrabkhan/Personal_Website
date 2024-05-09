@@ -5,6 +5,9 @@ This is my portfolio website created with Next.js and GSAP.
 ## Description
 
 This portfolio showcases my projects and skills. It is built using Next.js, a React framework, and GSAP for animations.
+
+## SecreenShot
+
 ![alt text](src/app/opengraph-image.png)
 
 ## Features
