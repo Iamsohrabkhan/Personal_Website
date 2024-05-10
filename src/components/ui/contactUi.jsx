@@ -247,7 +247,7 @@ export default function ContactUi() {
             </h4>
             <div className="space-y-3 text-body-2 2xl:text-3xl">
               <a
-                href="https:instagram.com/iamsohrabkhan"
+                href="https://www.instagram.com/imsohrabkhan_/"
                 className="group flex items-center space-x-2"
                 target="_blank"
                 rel="noreferrer"
@@ -259,7 +259,7 @@ export default function ContactUi() {
                 </div>
               </a>
               <a
-                href="https://www.instagram.com/imsohrabkhan_/"
+                href="https://github.com/Iamsohrabkhan/"
                 className="group flex items-center space-x-2"
                 target="_blank"
                 rel="noreferrer"
