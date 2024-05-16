@@ -15,8 +15,8 @@ export default function Works({ forwardedRef }) {
           <Projects
             link="https://main--appletvplusclone.netlify.app/"
             img="/assets/images/apple.png"
-            alt="Wedding website mockup"
-            name="Wedding Website"
+            alt="Apple TV Plus Website e mockup"
+            name="Apple TV Plus Website clone"
             type="Web Design • Frontend Development"
             year="2024"
             tools="React • SCSS • GSAP"
