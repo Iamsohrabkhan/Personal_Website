@@ -55,8 +55,7 @@ export default function About() {
               A brief intro, who am I?
             </h3>
             <p ref={body} className=" translate-y-10 text-body-1 2xl:text-4xl opacity-0">
-            My passion is building cool stuff. I build primarily with React, Tailwind CSS, and Framer Motion. I love this stack so much that I even built a website about it.
-           <br /> <br /> Originally from Pakistan, I love design and have dedicated my career to creating smooth, eye-catching websites. <br /> <br /> I am always up for having interesting discussions about web development, exchanging ideas, and learning about the constantly changing digital landscape when I am not buried in code or design.
+            I am an animated web developer and designer that uses Next.js, ReactJS, and Framer Motion to create frightening web pages animations. <br /> <br /> Originally from Pakistan, I love design and have dedicated my career to creating smooth, eye-catching websites. <br /> <br /> I am always up for having interesting discussions about web development, exchanging ideas, and learning about the constantly changing digital landscape when I am not buried in code or design.
             </p>
           </div>
         </div>
