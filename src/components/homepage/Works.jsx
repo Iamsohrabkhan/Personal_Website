@@ -22,7 +22,7 @@ export default function Works({ forwardedRef }) {
             tools="React • SCSS • GSAP"
           />
         </div>
-        <div className=" col-span-1 md:col-span-12">
+        {/* <div className=" col-span-1 md:col-span-12">
           <Projects
             link="https://wedding-tempalate-mu.vercel.app/"
             img="/assets/images/wedding.png"
@@ -32,8 +32,8 @@ export default function Works({ forwardedRef }) {
             year="2024"
             tools="NextJS • TailwindCSS • Framer Motion"
           />
-        </div>
-        <div className=" col-span-1 md:col-span-12">
+        </div> */}
+        <div className=" col-span-1 md:col-span-7">
           <Projects
             link="https://musical-stroopwafel-1c2327.netlify.app/landing.html"
             img={"/assets/images/ib-group-desktop.webp"}
@@ -45,7 +45,7 @@ export default function Works({ forwardedRef }) {
           />
         </div>
 
-        <div className=" col-span-1 md:col-span-12">
+        <div className=" col-span-1 md:col-span-5">
           <Projects
             link="https://natalie-rae-creative.vercel.app/"
             img={"/assets/images/natalie.png"}
@@ -90,7 +90,7 @@ export default function Works({ forwardedRef }) {
             tools="HTML • TailwindCSS • JavaScript"
           />
         </div>
-        <div className="col-span-1 h-fit md:col-span-4">
+        {/* <div className="col-span-1 h-fit md:col-span-4">
           <Projects
             link="https://sunnysidechallenge.netlify.app"
             img={"/assets/images/sunnyside-desktop.webp"}
@@ -100,7 +100,7 @@ export default function Works({ forwardedRef }) {
             year="2022"
             tools="HTML • TailwindCSS • JavaScript"
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );
