@@ -57,7 +57,7 @@ export default function Works({ forwardedRef }) {
           />
         </div>
         {/* Project #2 */}
-        <div className="col-span-1 pt-0 md:col-span-7 md:pt-16">
+        {/* <div className="col-span-1 pt-0 md:col-span-7 md:pt-16">
           <Projects
             link="https://mementostudio.netlify.app/"
             img={"/assets/images/memento-desktop.webp"}
@@ -89,7 +89,7 @@ export default function Works({ forwardedRef }) {
             year="2023"
             tools="HTML • TailwindCSS • JavaScript"
           />
-        </div>
+        </div> */}
         {/* <div className="col-span-1 h-fit md:col-span-4">
           <Projects
             link="https://sunnysidechallenge.netlify.app"
