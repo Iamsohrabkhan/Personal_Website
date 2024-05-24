@@ -6,18 +6,18 @@ export default function Services() {
     "Web Development",
     "Web Design",
     "UI/UX Design",
-    "Branding",
+    // "Branding",
   ];
 
   const toolBoxItems = [
-    "JavaScript",
     "HTML",
     "CSS",
     "TailwindCSS",
+    "JavaScript",
     "Framer Motion",
     "GSAP",
     "ReactJS",
-    "NextJS",
+    "Webflow",
   ];
 
   return (

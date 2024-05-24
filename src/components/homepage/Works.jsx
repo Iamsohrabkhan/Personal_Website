@@ -35,13 +35,13 @@ export default function Works({ forwardedRef }) {
         </div> */}
         <div className=" col-span-1 md:col-span-7">
           <Projects
-            link="https://musical-stroopwafel-1c2327.netlify.app/landing.html"
-            img={"/assets/images/ib-group-desktop.webp"}
-            alt="IBGroup vietnam website mockup"
-            name="ibgroup vietnam website"
+            link="https://sohrabkhan.webflow.io/"
+            img={"/assets/images/webflow-nick.png"}
+            alt="Sohrab Khan website built with webflow"
+            name="Portfolio Website"
             type="Web Design • Frontend Development"
-            year="2023"
-            tools="HTML • TailwindCSS • JavaScript • Figma"
+            year="2024"
+            tools="Webflow"
           />
         </div>
 
