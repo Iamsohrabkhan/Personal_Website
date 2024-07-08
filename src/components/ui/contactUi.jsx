@@ -247,7 +247,7 @@ export default function ContactUi() {
             </h4>
             <div className="space-y-3 text-body-2 2xl:text-3xl">
               <a
-                href="https://www.instagram.com/imsohrabkhan_/"
+                href="https://www.instagram.com/_sohrabkhan99"
                 className="group flex items-center space-x-2"
                 target="_blank"
                 rel="noreferrer"
