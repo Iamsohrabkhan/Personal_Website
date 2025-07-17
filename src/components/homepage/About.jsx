@@ -40,7 +40,7 @@ export default function About() {
           <Image
             ref={profile}
             className="aspect-square h-auto w-full rounded-md object-cove object-scale-down md:aspect-auto"
-            src="/assets/images/profile.jpg"
+            src="/assets/images/profile.png"
             width={600}
             height={800}
             alt="image of Sohrab Khan"
@@ -54,8 +54,18 @@ export default function About() {
             >
               A brief intro, who am I?
             </h3>
-            <p ref={body} className=" translate-y-10 text-body-1 2xl:text-4xl opacity-0">
-            I am an animated web developer and designer that uses Next.js, ReactJS, and Framer Motion to create frightening web pages animations. <br /> <br /> Originally from Pakistan, I love design and have dedicated my career to creating smooth, eye-catching websites. <br /> <br /> I am always up for having interesting discussions about web development, exchanging ideas, and learning about the constantly changing digital landscape when I am not buried in code or design.
+            <p
+              ref={body}
+              className=" translate-y-10 text-body-1 2xl:text-4xl opacity-0"
+            >
+              I am an animated web developer and designer that uses Next.js,
+              ReactJS, and Framer Motion to create frightening web pages
+              animations. <br /> <br /> Originally from Pakistan, I love design
+              and have dedicated my career to creating smooth, eye-catching
+              websites. <br /> <br /> I am always up for having interesting
+              discussions about web development, exchanging ideas, and learning
+              about the constantly changing digital landscape when I am not
+              buried in code or design.
             </p>
           </div>
         </div>

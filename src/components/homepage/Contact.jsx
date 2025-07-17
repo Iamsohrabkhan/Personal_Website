@@ -1,9 +1,7 @@
-import ContactUi from '../ui/contactUi'
+import ContactUi from "../ui/contactUi";
 
 const Contact = () => {
-  return (
-    <ContactUi/>
-  )
-}
+  return <ContactUi />;
+};
 
-export default Contact
+export default Contact;
