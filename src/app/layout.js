@@ -31,6 +31,9 @@ export const metadata = {
     },
   ],
   creator: "Sohrab Khan",
+  verification: {
+    google: "Pm7fb37F0roYBLXNwH89D4xG_cuwuP8bRGRTxKe7ol8",
+  },
 };
 
 export default function RootLayout({ children }) {
