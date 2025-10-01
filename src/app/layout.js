@@ -7,7 +7,7 @@ export const metadata = {
   },
   description:
     "Sohrab Khan is website developer, Sohrab Khan create website with reactJs, nextjs and motion.dev formally framer motion, Webflow, tailwind css and gsap.",
-  metadataBase: new URL("https://sohrabkhan.vercel.app/"),
+  metadataBase: new URL("https://sohrabkhan.dev/"),
   twitter: {
     card: "summary_large_image",
   },
@@ -23,11 +23,11 @@ export const metadata = {
     "Tailwind CSS",
     "Website Developer Pakistan",
   ],
-  archives: ["https://sohrabkhan.vercel.app/", "https://goodrgoods.com/"],
+  archives: ["https://sohrabkhan.dev/", "https://goodrgoods.com/"],
   authors: [
     {
       name: "Sohrab Khan",
-      url: "https://sohrabkhan.vercel.app/",
+      url: "https://sohrabkhan.dev/",
     },
   ],
   creator: "Sohrab Khan",
