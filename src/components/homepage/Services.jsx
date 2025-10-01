@@ -13,9 +13,9 @@ export default function Services() {
     "CSS",
     "TailwindCSS",
     "JavaScript",
-    "Framer Motion",
-    "GSAP",
     "ReactJS",
+    "GSAP",
+    "Framer Motion",
     "Webflow",
     "Wordpress",
   ];
