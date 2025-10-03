@@ -231,12 +231,12 @@ export default function ContactUi() {
             </h4>
             <div className="flex flex-col space-y-3 text-body-2 2xl:text-3xl">
               <a
-                href="mailto:7ohrabkhan@gmail.com"
+                href="mailto:hello@sohrabkhan.dev"
                 className="group relative w-fit cursor-pointer"
                 target="_blank"
                 rel="noreferrer"
               >
-                <span>7ohrabkhan@gmail.com</span>
+                <span>hello@sohrabkhan.dev</span>
                 <span className="absolute bottom-0 left-0 h-[0.12em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
               </a>
             </div>
