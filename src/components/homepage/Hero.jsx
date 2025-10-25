@@ -42,7 +42,7 @@ export default function Hero() {
       className="hero relative flex w-full h-svh select-none items-center justify-center py-4"
       aria-label="hero"
     >
-      <div className="z-10 flex flex-col   w-full items-center text-title 2xl:text-[10vw] space-y-1 xl:space-y-2 2xl:space-y-4 font-bold  uppercase text-accent-300 ">
+      <div className="z-10 flex flex-col   w-full items-center text-title 2xl:text-[10vw] space-y-1 xl:space-y-2 2xl:space-y-4 font-bold  uppercase text-accent-300 text-balance ">
         <div className="title  ">
           {/* Learn more about useRef */}
           <h1
@@ -57,7 +57,7 @@ export default function Hero() {
             ref={(el) => (titles.current[1] = el)}
             className="translate-y-96 md:font-outline-4 md:text-transparent  overflow-visible text-2xl md:text-4xl lg:text-7xl "
           >
-            I build cool websites
+            I build smooth fast
           </h1>
         </div>
         <div className=" title ">
@@ -65,7 +65,7 @@ export default function Hero() {
             ref={(el) => (titles.current[2] = el)}
             className="translate-y-96 text-xl md:text-4xl lg:text-7xl "
           >
-            Like this one.
+            functional websites
           </h1>
         </div>
       </div>

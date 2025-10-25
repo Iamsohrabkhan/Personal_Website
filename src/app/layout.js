@@ -1,12 +1,13 @@
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/next";import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 export const metadata = {
   title: {
     default: "Sohrab Khan",
     template: "%s - Sohrab Khan | Frontend Developer",
   },
   description:
-    "Sohrab Khan is website developer, Sohrab Khan create website with reactJs, nextjs and motion.dev formally framer motion, Webflow, tailwind css and gsap.",
+    "Sohrab Khan is a front-end developer specializing in building websites with ReactJS, Next.js, GSAP, Three.js, Webflow, Tailwind CSS, and Motion.dev.",
   metadataBase: new URL("https://sohrabkhan.dev/"),
   twitter: {
     card: "summary_large_image",
@@ -17,11 +18,14 @@ export const metadata = {
     "ReactJS Developer",
     "Next.js",
     "GSAP",
-    "Framer Motion",
     "Motion.dev",
     "Webflow developer",
+    "Framer",
+    "motion",
+    "Wordpress developer",
     "Tailwind CSS",
     "Website Developer Pakistan",
+    "Three js",
   ],
   archives: ["https://sohrabkhan.dev/", "https://goodrgoods.com/"],
   authors: [

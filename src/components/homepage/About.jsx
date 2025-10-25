@@ -58,14 +58,21 @@ export default function About() {
               ref={body}
               className=" translate-y-10 text-body-1 2xl:text-4xl opacity-0"
             >
-              I am an animated web developer and designer that uses Next.js,
-              ReactJS, and Framer Motion to create frightening web pages
-              animations. <br /> <br /> Originally from Pakistan, I love design
-              and have dedicated my career to creating smooth, eye-catching
-              websites. <br /> <br /> I am always up for having interesting
-              discussions about web development, exchanging ideas, and learning
-              about the constantly changing digital landscape when I am not
-              buried in code or design.
+              I am a front-end web developer specializing in smooth and
+              interactive website experiences using Next.js, ReactJS, GSAP,
+              Three.js, Webflow, and WordPress.
+              <br />
+              <br />
+              Originally from Pakistan, I have a strong passion for web
+              development and focus on building clean, responsive, and visually
+              engaging websites.
+              <br />
+              <br />
+              When I’m not writing code or experimenting with animations, I
+              enjoy discussing web development, sharing ideas, and staying
+              updated with the ever-evolving digital world.
+              <br />
+              <br />
             </p>
           </div>
         </div>
