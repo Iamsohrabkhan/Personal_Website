@@ -2,6 +2,8 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 export const metadata = {
+  type: "website",
+  locale: "en_US",
   title: {
     default: "Sohrab Khan",
     template: "%s - Sohrab Khan | Frontend Developer",
@@ -27,7 +29,17 @@ export const metadata = {
     "Website Developer Pakistan",
     "Three js",
   ],
-  archives: ["https://sohrabkhan.dev/", "https://goodrgoods.com/"],
+  url: "https://sohrabkhan.dev/",
+  alternates: {
+    canonical: "https://sohrabkhan.dev/",
+  },
+
+  archives: [
+    "https://sohrabkhan.dev/",
+    "https://goodrgoods.com/",
+    "https://www.seventy.blue/",
+    "https://www.haroldcano.com/",
+  ],
   authors: [
     {
       name: "Sohrab Khan",

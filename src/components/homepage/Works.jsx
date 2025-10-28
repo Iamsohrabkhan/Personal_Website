@@ -13,49 +13,38 @@ export default function Works({ forwardedRef }) {
         {/* Project #1 */}
         <div className=" col-span-1 md:col-span-12">
           <Projects
+            link="https://www.seventy.blue/"
+            img="/assets/images/seventy-blue-dark.png"
+            alt="Seventy Blue Mockup"
+            name="Seventy Blue"
+            type="• Frontend Development • Gsap Animations"
+            year="2024"
+            tools="Webflow • GSAP"
+          />
+        </div>
+        <div className=" col-span-1 md:col-span-7">
+          <Projects
+            link="https://www.haroldcano.com/"
+            img="/assets/images/harold-cano-black-texture.png"
+            alt="Harold Cano portfolio"
+            name="Harold Cano Portfolio"
+            type="• Frontend Development"
+            year="2025"
+            tools="Next Js • Tailwind Css • Motion.dev • GSAP"
+          />
+        </div>
+        <div className=" col-span-1 md:col-span-5">
+          <Projects
             link="https://main--appletvplusclone.netlify.app/"
             img="/assets/images/apple.png"
             alt="Apple TV Plus Website e mockup"
             name="Apple TV Plus Website clone"
-            type="Web Design • Frontend Development"
+            type="Frontend Development"
             year="2024"
             tools="React • SCSS • GSAP"
           />
         </div>
-        {/* <div className=" col-span-1 md:col-span-12">
-          <Projects
-            link="https://wedding-tempalate-mu.vercel.app/"
-            img="/assets/images/wedding.png"
-            alt="Wedding website mockup"
-            name="Wedding Website"
-            type="Web Design • Frontend Development"
-            year="2024"
-            tools="NextJS • TailwindCSS • Framer Motion"
-          />
-        </div> */}
-        <div className=" col-span-1 md:col-span-7">
-          <Projects
-            link="https://sohrabkhan.webflow.io/"
-            img={"/assets/images/webflow-nick.png"}
-            alt="Sohrab Khan website built with webflow"
-            name="Portfolio Website"
-            type="Web Design • Frontend Development"
-            year="2024"
-            tools="Webflow"
-          />
-        </div>
-
-        <div className=" col-span-1 md:col-span-5">
-          <Projects
-            link="https://natalie-rae-creative.vercel.app/"
-            img={"/assets/images/natalie.png"}
-            alt="natlie rae creative"
-            name="natlieraecreative"
-            type="Web Design • Frontend Development"
-            year="2023"
-            tools="NextJS • TailwindCSS • Framer Motion"
-          />
-        </div>
+       
         {/* Project #2 */}
         {/* <div className="col-span-1 pt-0 md:col-span-7 md:pt-16">
           <Projects

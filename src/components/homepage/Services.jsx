@@ -15,8 +15,8 @@ export default function Services() {
     "JavaScript",
     "ReactJS",
     "GSAP",
-    "Framer Motion",
     "Webflow",
+    "Framer",
     "Wordpress",
   ];
 
