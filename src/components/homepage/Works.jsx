@@ -44,7 +44,29 @@ export default function Works({ forwardedRef }) {
             tools="React • SCSS • GSAP"
           />
         </div>
-       
+        <div className=" col-span-1 md:col-span-5">
+          <Projects
+            link="https://fiftybrookgreen.co.uk/"
+            img="/assets/images/brookgreen.png"
+            alt="Brook Green Website e mockup"
+            name="Brook Green"
+            type="Frontend Development"
+            year="2025"
+            tools="HTML • SCSS • GSAP"
+          />
+        </div>
+        <div className=" col-span-1 md:col-span-7">
+          <Projects
+            link="https://countyhallkingston.co.uk/"
+            img="/assets/images/chk.png"
+            alt="County Hall Kingdom Website mockup"
+            name="County Hall Kingdom"
+            type="Frontend Development"
+            year="2025"
+            tools="HTML • SCSS • GSAP"
+          />
+        </div>
+
         {/* Project #2 */}
         {/* <div className="col-span-1 pt-0 md:col-span-7 md:pt-16">
           <Projects
