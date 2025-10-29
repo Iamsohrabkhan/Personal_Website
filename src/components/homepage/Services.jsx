@@ -14,9 +14,10 @@ export default function Services() {
     "TailwindCSS",
     "JavaScript",
     "ReactJS",
+    "NextJS",
     "GSAP",
     "Webflow",
-    "Framer",
+    // "Framer",
     "Wordpress",
   ];
 
