@@ -66,6 +66,28 @@ export default function Works({ forwardedRef }) {
             tools="HTML • SCSS • GSAP"
           />
         </div>
+        <div className=" col-span-1 md:col-span-5">
+          <Projects
+            link="https://www.goodrgoods.com/"
+            img="/assets/images/goodrgoods.png"
+            alt="Goodrgoods Website e mockup"
+            name="Good rgoods"
+            type="Frontend Development"
+            year="2025"
+            tools="Framer"
+          />
+        </div>
+        <div className=" col-span-1 md:col-span-7 ">
+          <Projects
+            link="https://www.abord.app/"
+            img="/assets/images/abord-1.png"
+            alt="abord mockup"
+            name="Abord Tickets"
+            type="Frontend Development"
+            year="2025"
+            tools="Next Js • Motion.dev"
+          />
+        </div>
 
         {/* Project #2 */}
         {/* <div className="col-span-1 pt-0 md:col-span-7 md:pt-16">
