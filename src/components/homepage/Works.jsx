@@ -14,22 +14,22 @@ export default function Works({ forwardedRef }) {
         <div className=" col-span-1 md:col-span-12">
           <Projects
             link="https://www.seventy.blue/"
-            img="/assets/images/seventy-blue-dark.png"
+            img="/assets/images/seventy-blue-1.png"
             alt="Seventy Blue Mockup"
             name="Seventy Blue"
             type="• Frontend Development • Gsap Animations"
-            year="2024"
+            year="2025"
             tools="Webflow • GSAP"
           />
         </div>
         <div className=" col-span-1 md:col-span-7">
           <Projects
             link="https://www.haroldcano.com/"
-            img="/assets/images/harold-cano-black-texture.png"
+            img="/assets/images/harold.png"
             alt="Harold Cano portfolio"
             name="Harold Cano Portfolio"
             type="• Frontend Development"
-            year="2025"
+            year="2024"
             tools="Next Js • Tailwind Css • Motion.dev • GSAP"
           />
         </div>
@@ -48,7 +48,7 @@ export default function Works({ forwardedRef }) {
           <Projects
             link="https://fiftybrookgreen.co.uk/"
             img="/assets/images/brookgreen.png"
-            alt="Brook Green Website e mockup"
+            alt="Brook Green Website mockup"
             name="Brook Green"
             type="Frontend Development"
             year="2025"
@@ -85,7 +85,7 @@ export default function Works({ forwardedRef }) {
             name="Abord Tickets"
             type="Frontend Development"
             year="2025"
-            tools="Next Js • Motion.dev"
+            tools="Next Js • Tailwind Css • Motion.dev"
           />
         </div>
 
