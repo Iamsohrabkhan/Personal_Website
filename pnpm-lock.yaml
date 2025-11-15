@@ -38,6 +38,9 @@ importers:
       react-dom:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
+      ukiyojs:
+        specifier: ^4.2.0
+        version: 4.2.0
       yup:
         specifier: ^1.7.1
         version: 1.7.1
@@ -1799,6 +1802,10 @@ packages:
     resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
     engines: {node: '>=14.17'}
     hasBin: true
+
+  ukiyojs@4.2.0:
+    resolution: {integrity: sha512-Y3rmK+Kdq4JooPk1mEsYIOFUOlH6uDZm4NGQW37knbPlFgV9WmMmsYuimnBsubd++gLrfDPKzqEzz1rg5lMAbQ==}
+    engines: {node: '>=16'}
 
   unbox-primitive@1.1.0:
     resolution: {integrity: sha512-nWJ91DjeOkej/TA8pXQ3myruKpKEYgqvpw9lz4OPHj/NWFNluYrjbz9j01CJ8yKQd2g4jFoOkINCTW2I5LEEyw==}
@@ -3783,6 +3790,8 @@ snapshots:
       reflect.getprototypeof: 1.0.10
 
   typescript@5.9.3: {}
+
+  ukiyojs@4.2.0: {}
 
   unbox-primitive@1.1.0:
     dependencies:

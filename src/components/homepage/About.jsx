@@ -3,6 +3,7 @@ import { ScrollTrigger } from "gsap/all";
 import { gsap } from "gsap";
 import Heading from "../ui/Heading";
 import Image from "next/image";
+import Ukiyo from "ukiyojs";
 
 export default function About() {
   const profile = useRef(null);
@@ -32,6 +33,17 @@ export default function About() {
     ScrollTrigger.refresh();
   }, [aboutSection]);
 
+  useEffect(() => {
+    const parra = new Ukiyo(".ukiyo", {
+      scale: 1.2,
+      
+    });
+
+    return () => {
+      parra.destroy();
+    };
+  }, []);
+
   return (
     <section ref={aboutSection} aria-label="about me">
       <Heading title="about me" />
@@ -39,7 +51,7 @@ export default function About() {
         <div className="top-28 overflow-hidden rounded-md md:sticky md:w-1/2">
           <Image
             ref={profile}
-            className="aspect-square h-auto w-full rounded-md object-cove object-scale-down md:aspect-auto"
+            className="ukiyo aspect-square h-auto w-full rounded-md object-cove object-scale-down md:aspect-auto"
             src="/assets/images/profile.png"
             width={600}
             height={800}
